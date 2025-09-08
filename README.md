@@ -96,7 +96,7 @@ Portfolio/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Thilinadilshan22/Web-Project-.git
+   git clone (https://github.com/Thilinadilshan22/my--portfolio.git)
    ```
 
 2. **Navigate to the project directory**:
