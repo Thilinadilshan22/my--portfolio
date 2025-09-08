@@ -13,7 +13,7 @@ A modern, responsive portfolio website showcasing the skills, projects, and jour
 
 ## 🚀 Live Demo
 
-- **Live Site**: [https://thilinadilshan22.github.io/Web-Project-/](https://thilinadilshan22.github.io/Web-Project-/)
+- **Live Site**: [https://thilinadilshan22.github.io/Web-Project-/]([https://thilinadilshan22.github.io/Web-Project-/](https://thilinadilshan22.github.io/my--portfolio/))
 - **GitHub Repository**: [https://github.com/Thilinadilshan22/Web-Project-.git](https://github.com/Thilinadilshan22/Web-Project-.git)
 
 ## 📁 Project Structure
