@@ -13,8 +13,8 @@ A modern, responsive portfolio website showcasing the skills, projects, and jour
 
 ## 🚀 Live Demo
 
-- **Live Site**: [https://thilinadilshan22.github.io/Web-Project-/](https://thilinadilshan22.github.io/Web-Project-/)
-- **GitHub Repository**: [https://github.com/Thilinadilshan22/Web-Project-.git](https://github.com/Thilinadilshan22/Web-Project-.git)
+- **Live Site**: [https://thilinadilshan22.github.io/my--portfolio/([https://thilinadilshan22.github.io/my--portfolio/](https://thilinadilshan22.github.io/my--portfolio/))]
+- **GitHub Repository**: [[https://github.com/Thilinadilshan22/Web-Project-.git](https://github.com/Thilinadilshan22/Web-Project-.git)]
 
 ## 📁 Project Structure
 
@@ -96,7 +96,7 @@ Portfolio/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Thilinadilshan22/Web-Project-.git
+   git clone https://github.com/Thilinadilshan22/my--portfolio.git
    ```
 
 2. **Navigate to the project directory**:
