@@ -21,7 +21,7 @@ A modern, responsive portfolio website showcasing the skills, projects, and jour
 ```
 Portfolio/
 ├── portfolio.html          # Main HTML file
-├── profile-image.jpg       # Profile picture
+├── Profile photo.jpeg      # Profile picture
 └── README.md              # Project documentation
 ```
 
