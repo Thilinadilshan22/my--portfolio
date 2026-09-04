@@ -61,9 +61,8 @@ Portfolio/
   - Version Control (Git, GitHub)
 
 ### 4. **Projects**
-- Current web development project showcase
-- Placeholder for future projects
-- Direct links to GitHub repository and live demo
+- Showcase of featured projects including ShadowSense AI, Web Development, Galagama Gems, Music Platform, and Vehicle Management System
+- Direct links to GitHub repositories, live demos, and documentation
 
 ### 5. **Contact**
 - Contact information with interactive links
