@@ -61,7 +61,7 @@ Portfolio/
   - Version Control (Git, GitHub)
 
 ### 4. **Projects**
-- Showcase of featured projects including ShadowSense AI, Web Development, Galagama Gems, Music Platform, and Vehicle Management System
+- Showcase of featured projects including ShadowSense AI, Web Development, Galagama Gems, Music Platform, and V-MAS (Smart Vehicle Management System)
 - Direct links to GitHub repositories, live demos, and documentation
 
 ### 5. **Contact**
