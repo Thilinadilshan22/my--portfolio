@@ -153,13 +153,28 @@ button.tag[aria-pressed="true"]{background:linear-gradient(90deg,#0891b2,#1e40af
 .ab{font:600 .95rem var(--sans);cursor:pointer;padding:11px 22px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent);background:transparent;text-decoration:none;display:inline-block}
 .ab.f{background:linear-gradient(90deg,#0891b2,#1e40af);color:#fff;border-color:transparent}.ab:hover{transform:translateY(-2px)}
 @media(max-width:860px){.r2{grid-template-columns:1fr}.cl li{grid-template-columns:44px 1fr auto}.sk2{grid-template-columns:1fr}.grp{grid-template-columns:1fr;gap:8px}.hero .wrap,.about,.ct{grid-template-columns:1fr}.about{gap:32px}.about img,.about-portrait{max-width:260px}.pj{grid-template-columns:1fr}.feat{flex-direction:column}.feat img{width:100%;min-height:0;aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)}.nav ul li:not(:last-child){display:none}.nav ul li:nth-child(4){display:block}.ft-top,.ft-mid,.ft-bot{flex-direction:column;align-items:flex-start;gap:14px}.ft-links{flex-wrap:wrap;gap:10px 16px}}
+/* CV section */
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px}
+.cv-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px 28px 28px;display:flex;flex-direction:column;gap:14px;transition:transform .25s,box-shadow .25s;overflow:hidden}
+.cv-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,145,178,.07) 0%,rgba(30,64,175,.07) 100%);pointer-events:none;opacity:0;transition:opacity .3s}
+.cv-card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(8,60,90,.14)}.cv-card:hover::before{opacity:1}
+.cv-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#0891b2,#1e40af);color:#fff;flex-shrink:0}
+.cv-head{display:flex;align-items:center;gap:14px}
+.cv-title{font:700 1.2rem/1.2 var(--sans);letter-spacing:-.01em}
+.cv-desc{color:var(--text2);font-size:.95rem;flex:1}
+.cv-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.cv-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;font:600 .92rem var(--sans);text-decoration:none;border:1.5px solid transparent;transition:transform .2s,background .2s,border-color .2s}
+.cv-btn.view{background:linear-gradient(90deg,#0891b2,#1e40af);color:#fff}.cv-btn.view:hover{transform:translateY(-2px);opacity:.9}
+.cv-btn.dl{border-color:var(--accent);color:var(--accent);background:transparent}.cv-btn.dl:hover{background:var(--tag);transform:translateY(-2px)}
+.cv-corner{position:absolute;top:-18px;right:-18px;width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,rgba(8,145,178,.12),rgba(30,64,175,.12));pointer-events:none}
+@media(max-width:860px){.cv-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fi{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
 <a class="logo" href="#home" aria-label="Thilina Dilshan - Home"><img src="images/logo.png" alt="til." class="logo-img"></a>
-<ul><li><a class="l" href="#about">About</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#contact">Contact</a></li><li><button id="tt" aria-label="Toggle dark mode"></button></li></ul>
+<ul><li><a class="l" href="#about">About</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#cv">CV</a></li><li><a class="l" href="#contact">Contact</a></li><li><button id="tt" aria-label="Toggle dark mode"></button></li></ul>
 </div></header>
 
 <section id="home" class="hero"><div class="wrap">
@@ -167,7 +182,7 @@ button.tag[aria-pressed="true"]{background:linear-gradient(90deg,#0891b2,#1e40af
 <h1>Thilina Dilshan</h1>
 <p class="sub">Aspiring system administrator</p>
 <p class="in">BSc (Hons) Information Systems student at Sabaragamuwa University of Sri Lanka. I work with Linux, servers and networking, and build Python and React projects along the way.</p>
-<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Contact me</a></div>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Contact me</a><a class="btn" href="#cv">View my CV</a></div>
 </div>
 <div class="term" role="img" aria-label="Terminal: thilina-dilshan, Information Systems student, skills linux bash python react networking"><div class="bar"><i></i><i></i><i></i></div><pre id="term" aria-hidden="true"></pre></div>
 </div></section>
@@ -189,6 +204,64 @@ button.tag[aria-pressed="true"]{background:linear-gradient(90deg,#0891b2,#1e40af
 <p>I also build web projects with React and design interfaces in Figma, so I can take an idea from a screen to a working system.</p>
 <ul class="facts"><li>Currently learning Linux, Python, React and Node.js</li><li>Open to collaborating on system, automation and web projects</li><li>Ask me about Linux, system administration, Python, React and UI design</li></ul>
 </div></div></section>
+
+<section id="cv" class="s alt">
+<div class="wrap">
+<h2 class="fi">My CVs</h2>
+<p class="lead fi">Download or view my CVs tailored for different roles. Click to open in Google Drive.</p>
+<div class="cv-grid fi">
+
+  <div class="cv-card">
+    <div class="cv-corner"></div>
+    <div class="cv-head">
+      <div class="cv-icon">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 8h10M7 12h6M7 16h8"/></svg>
+      </div>
+      <div>
+        <div class="cv-title">System Administrator CV</div>
+        <div class="tags" style="margin-top:6px"><span class="tag">Linux</span><span class="tag">Networking</span><span class="tag">Servers</span></div>
+      </div>
+    </div>
+    <p class="cv-desc">Focused on infrastructure, system administration, Linux environments, networking and server management.</p>
+    <div class="cv-actions">
+      <a class="cv-btn view" href="https://drive.google.com/file/d/11u3IsZy5QTET-AYrP2xyKNbTQ5TuBbfw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        View CV
+      </a>
+      <a class="cv-btn dl" href="https://drive.google.com/uc?export=download&id=11u3IsZy5QTET-AYrP2xyKNbTQ5TuBbfw" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download
+      </a>
+    </div>
+  </div>
+
+  <div class="cv-card">
+    <div class="cv-corner"></div>
+    <div class="cv-head">
+      <div class="cv-icon">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <div>
+        <div class="cv-title">IT Support CV</div>
+        <div class="tags" style="margin-top:6px"><span class="tag">IT Support</span><span class="tag">Troubleshooting</span><span class="tag">Hardware</span></div>
+      </div>
+    </div>
+    <p class="cv-desc">Tailored for IT support roles: helpdesk, troubleshooting, hardware & software support and end-user assistance.</p>
+    <div class="cv-actions">
+      <a class="cv-btn view" href="https://drive.google.com/file/d/1V6lr4NxmHaSogzkWuxzJ-W1NwCs6K6XS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        View CV
+      </a>
+      <a class="cv-btn dl" href="https://drive.google.com/uc?export=download&id=1V6lr4NxmHaSogzkWuxzJ-W1NwCs6K6XS" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download
+      </a>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
 
 <section id="skills" class="s alt"><div class="wrap">
 <h2 class="fi">Skills</h2><p class="lead fi">Pick a skill to see which projects it went into.</p>
@@ -269,6 +342,7 @@ button.tag[aria-pressed="true"]{background:linear-gradient(90deg,#0891b2,#1e40af
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="ft-social">
